@@ -1,0 +1,30 @@
+{
+  "scopeName": "source.tl",
+  "name": "TiLang",
+  "patterns": [
+    {
+      "match": "\\b(class|if|else|not|and|or|True|False)\\b",
+      "name": "keyword.control.tl"
+    },
+    {
+      "match": "\\b(print|input|que|delay|bye)\\b",
+      "name": "support.function.tl"
+    },
+    {
+      "match": "\".*?\"",
+      "name": "string.quoted.double.tl"
+    },
+    {
+      "match": "\\b[0-9]+\\b",
+      "name": "constant.numeric.tl"
+    },
+    {
+      "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b",
+      "name": "variable.other.tl"
+    },
+    {
+      "match": "//.*",
+      "name": "comment.line.double-slash.tl"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "tilang",
+  "displayName": "tilang",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tl",
+        "aliases": [
+          "tilang",
+          "tl"
+        ],
+        "extensions": [
+          ".tl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tl",
+        "scopeName": "source.tl",
+        "path": "./syntaxes/tl.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "tilang": "file:"
+  }
+}
